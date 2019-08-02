@@ -1,0 +1,1177 @@
+{
+	"info": {
+		"_postman_id": "a4332279-3b08-48ae-a6d0-8a44d1cfaff8",
+		"name": "HttpServer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:11200/echoBody",
+			"request": {
+				"auth": {
+					"type": "basic"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:11200/echoBody",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"echoBody"
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": "test1",
+							"disabled": true
+						},
+						{
+							"key": "test2",
+							"value": "test2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/redirect",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:11200/redirect",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"redirect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/echoHeader",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "test",
+							"value": "test1",
+							"type": "text"
+						},
+						{
+							"key": "test2",
+							"value": "test2",
+							"type": "text"
+						},
+						{
+							"key": "test3",
+							"value": "test3",
+							"type": "text"
+						},
+						{
+							"key": "test4",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/echoHeader",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"echoHeader"
+					],
+					"query": [
+						{
+							"key": "test",
+							"value": "test1",
+							"disabled": true
+						},
+						{
+							"key": "test2",
+							"value": "test2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/SOF_OpenDevice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "cmd",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:11200/SOF_OpenDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"SOF_OpenDevice"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/SOF_CloseDevice",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "cmd",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:11200/SOF_CloseDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"SOF_CloseDevice"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_GetUserList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "cmd",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:11200/RS_GetUserList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_GetUserList"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_GetCertBase64String",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "cmd",
+						"type": "text",
+						"value": "12",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"type": "text",
+						"value": "12",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "certType",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_GetCertBase64String",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_GetCertBase64String"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_CertLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "cmd",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"value": "12",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "222222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_CertLogin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_CertLogin"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_ConfigParameters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "cmd",
+						"type": "text",
+						"value": "12",
+						"disabled": true
+					},
+					{
+						"key": "value",
+						"type": "text",
+						"value": "12",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cmd",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "val",
+							"value": "localhost",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_ConfigParameters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_ConfigParameters"
+					],
+					"query": [
+						{
+							"key": "cmd",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "val",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_GetParameters",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cmd",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_GetParameters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_GetParameters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_GetCertInfo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certBase64",
+							"value": "MIIDMzCCAtmgAwIBAgIKGhAAAAAAAPXBIDAKBggqgRzPVQGDdTBEMQswCQYDVQQGEwJDTjENMAsGA1UECgwEQkpDQTENMAsGA1UECwwEQkpDQTEXMBUGA1UEAwwOQmVpamluZyBTTTIgQ0EwHhcNMTkwMzEzMTYwMDAwWhcNMjEwMzE0MTU1OTU5WjBVMQswCQYDVQQGDAJDTjESMBAGA1UECAwJ5YaF6JKZ5Y+kMRUwEwYDVQQHDAzphILlsJTlpJrmlq8xGzAZBgNVBAMMEuS4quS6uuaWsOmUgea1i+ivlTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABIFZnfVmhM9T12IuLeNLjZmPqZYBAIDRDVgk7Hu0NJT4eMQXu5n3BWwJXAFsLV/xONm4CBTj0ROr9n8rfUijbUGjggGgMIIBnDAfBgNVHSMEGDAWgBQf5s/Uj8UiKpdKKYoV5xbJkjTEtjAdBgNVHQ4EFgQUV31Sc9UBDXrG1HOe8k3x0TwYj8AwCwYDVR0PBAQDAgM4MIGdBgNVHR8EgZUwgZIwYKBeoFykWjBYMQswCQYDVQQGEwJDTjENMAsGA1UECgwEQkpDQTENMAsGA1UECwwEQkpDQTEXMBUGA1UEAwwOQmVpamluZyBTTTIgQ0ExEjAQBgNVBAMTCWNhMjFjcmw4MTAuoCygKoYoaHR0cDovL2NybC5iamNhLm9yZy5jbi9jcmwvY2EyMWNybDgxLmNybDAcBgoqgRyG7zICAQEBBA4MDFNGMTIzNDU2Nzg5MDAWBghghkgBhvhEAgQKMTIzNDU2Nzg5MDAfBgoqgRyG7zICAQEOBBEMDzgwNjAwMDExOTYzMTcwODAmBgoqgRyG7zICAQEXBBgMFjY2QDIxNTAwOVNGMDEyMzQ1Njc4OTAwGAYIKoEc0BQEAQEEDAwKMTIzNDU2Nzg5MDAUBgoqgRyG7zICAQEeBAYMBDIzNDQwCgYIKoEcz1UBg3UDSAAwRQIhAN+pq005i+VZaE1/lTkOPeHqFdL5CN0cdTBM1OjWeq8xAiBTrypb3KiW1L42onbb4q6qcHVHFJcFgH86TlGipSz95Q==",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_GetCertInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_GetCertInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_ChangePassWd",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "oldCode",
+							"value": "111111",
+							"type": "text"
+						},
+						{
+							"key": "newCode",
+							"value": "222222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_ChangePassWd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_ChangePassWd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_GetPinRetryCount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "oldCode",
+							"value": "111111",
+							"type": "text"
+						},
+						{
+							"key": "newCode",
+							"value": "222222",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_ChangePassWd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_ChangePassWd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeyGetKeySn",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "oldCode",
+							"value": "111111",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "newCode",
+							"value": "222222",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeyGetKeySn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeyGetKeySn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeySignByP1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "asn1Msg",
+							"value": "Today is nice day",
+							"type": "text"
+						},
+						{
+							"key": "newCode",
+							"value": "222222",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeySignByP1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeySignByP1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_VerifySignByP1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certBase64",
+							"value": "MIIDNDCCAtugAwIBAgIKGhAAAAAAAPXBHzAKBggqgRzPVQGDdTBEMQswCQYDVQQGEwJDTjENMAsGA1UECgwEQkpDQTENMAsGA1UECwwEQkpDQTEXMBUGA1UEAwwOQmVpamluZyBTTTIgQ0EwHhcNMTkwMzEzMTYwMDAwWhcNMjEwMzE0MTU1OTU5WjBVMQswCQYDVQQGDAJDTjESMBAGA1UECAwJ5YaF6JKZ5Y+kMRUwEwYDVQQHDAzphILlsJTlpJrmlq8xGzAZBgNVBAMMEuS4quS6uuaWsOmUgea1i+ivlTBZMBMGByqGSM49AgEGCCqBHM9VAYItA0IABAVK35Zlo52srxphRd2XCKBAUk7eb/2GSjugttJTWsuV7IH7NN8oFAOrV2Zkck7XM09qWjvWqaaYs1zFzPpYQcOjggGiMIIBnjAfBgNVHSMEGDAWgBQf5s/Uj8UiKpdKKYoV5xbJkjTEtjAdBgNVHQ4EFgQU/qp7oarkPQIqEH0Va0OEIBikkwkwCwYDVR0PBAQDAgbAMIGdBgNVHR8EgZUwgZIwYKBeoFykWjBYMQswCQYDVQQGEwJDTjENMAsGA1UECgwEQkpDQTENMAsGA1UECwwEQkpDQTEXMBUGA1UEAwwOQmVpamluZyBTTTIgQ0ExEjAQBgNVBAMTCWNhMjFjcmw4MTAuoCygKoYoaHR0cDovL2NybC5iamNhLm9yZy5jbi9jcmwvY2EyMWNybDgxLmNybDAcBgoqgRyG7zICAQEBBA4MDFNGMTIzNDU2Nzg5MDAYBghghkgBhvhEAgQMDAoxMjM0NTY3ODkwMB8GCiqBHIbvMgIBAQ4EEQwPODA2MDAwMTE5NjMxNzA4MCYGCiqBHIbvMgIBARcEGAwWNjZAMjE1MDA5U0YwMTIzNDU2Nzg5MDAYBggqgRzQFAQBAQQMDAoxMjM0NTY3ODkwMBQGCiqBHIbvMgIBAR4EBgwEMjM0NDAKBggqgRzPVQGDdQNHADBEAiB0VqvkN7synqvZooWQhiRHkNC/20uBa4NjAn5d/hV2rwIgfFT6J4BRY00Cw7lRiYN4xELU/Sz1ZsRKXQ7dPgYpCS0=",
+							"type": "text"
+						},
+						{
+							"key": "msg",
+							"value": "Today is nice day",
+							"type": "text"
+						},
+						{
+							"key": "signdMsg",
+							"value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD2l9ir8dih8aYK+tT7Hxm5nro3Yn6e+kT4/2Z6hkTfcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUtontFUkiAJVjs7fFoUDduwc1Gbehy0hj28KrwZfGeE=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_VerifySignByP1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_VerifySignByP1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeySignByP7",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "806000119631708",
+							"type": "text"
+						},
+						{
+							"key": "msg",
+							"value": "Today is nice day",
+							"type": "text"
+						},
+						{
+							"key": "flag",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeySignByP7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeySignByP7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_VerifySignByP7",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "signdMsg",
+							"value": "MIIESgYKKoEcz1UGAQQCAqCCBDowggQ2AgEBMQ4wDAYIKoEcz1UBgxEFADAhBgoqgRzPVQYBBAIBoBMEEVRvZGF5IGlzIG5pY2UgZGF5oIIDODCCAzQwggLboAMCAQICChoQAAAAAAD1wR8wCgYIKoEcz1UBg3UwRDELMAkGA1UEBhMCQ04xDTALBgNVBAoMBEJKQ0ExDTALBgNVBAsMBEJKQ0ExFzAVBgNVBAMMDkJlaWppbmcgU00yIENBMB4XDTE5MDMxMzE2MDAwMFoXDTIxMDMxNDE1NTk1OVowVTELMAkGA1UEBgwCQ04xEjAQBgNVBAgMCeWGheiSmeWPpDEVMBMGA1UEBwwM6YSC5bCU5aSa5pavMRswGQYDVQQDDBLkuKrkurrmlrDplIHmtYvor5UwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAQFSt+WZaOdrK8aYUXdlwigQFJO3m/9hko7oLbSU1rLleyB+zTfKBQDq1dmZHJO1zNPalo71qmmmLNcxcz6WEHDo4IBojCCAZ4wHwYDVR0jBBgwFoAUH+bP1I/FIiqXSimKFecWyZI0xLYwHQYDVR0OBBYEFP6qe6Gq5D0CKhB9FWtDhCAYpJMJMAsGA1UdDwQEAwIGwDCBnQYDVR0fBIGVMIGSMGCgXqBcpFowWDELMAkGA1UEBhMCQ04xDTALBgNVBAoMBEJKQ0ExDTALBgNVBAsMBEJKQ0ExFzAVBgNVBAMMDkJlaWppbmcgU00yIENBMRIwEAYDVQQDEwljYTIxY3JsODEwLqAsoCqGKGh0dHA6Ly9jcmwuYmpjYS5vcmcuY24vY3JsL2NhMjFjcmw4MS5jcmwwHAYKKoEchu8yAgEBAQQODAxTRjEyMzQ1Njc4OTAwGAYIYIZIAYb4RAIEDAwKMTIzNDU2Nzg5MDAfBgoqgRyG7zICAQEOBBEMDzgwNjAwMDExOTYzMTcwODAmBgoqgRyG7zICAQEXBBgMFjY2QDIxNTAwOVNGMDEyMzQ1Njc4OTAwGAYIKoEc0BQEAQEEDAwKMTIzNDU2Nzg5MDAUBgoqgRyG7zICAQEeBAYMBDIzNDQwCgYIKoEcz1UBg3UDRwAwRAIgdFar5De7Mp6r2aKFkIYkR5DQv9tLgWuDYwJ+Xf4Vdq8CIHxU+ieAUWNNAsO5UYmDeMRC1P0s9WbESl0O3T4GKQktMYHBMIG+AgEBMFIwRDELMAkGA1UEBhMCQ04xDTALBgNVBAoMBEJKQ0ExDTALBgNVBAsMBEJKQ0ExFzAVBgNVBAMMDkJlaWppbmcgU00yIENBAgoaEAAAAAAA9cEfMAwGCCqBHM9VAYMRBQAwDQYJKoEcz1UBgi0BBQAESDBGAiEAtFqBQ4aCA7XBOBMH8P7Zn5D9QbVy7gRnHBJrdg5Z7TgCIQD0uOSYZmShz42Rybhkm5YUZAlaiCoxN4L3P9AySn8D2w==",
+							"type": "text"
+						},
+						{
+							"key": "msg",
+							"value": "Today is nice day",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "flag",
+							"value": "0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_VerifySignByP7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_VerifySignByP7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_EncryptFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "souceFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\paintText.txt",
+							"type": "text"
+						},
+						{
+							"key": "encFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\encryptText.txt",
+							"type": "text"
+						},
+						{
+							"key": "flag",
+							"value": "1",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_EncryptFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_EncryptFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_DecryptFile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dncDirectoryPath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\decryptText.txt",
+							"type": "text"
+						},
+						{
+							"key": "encFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\encryptText.txt",
+							"type": "text"
+						},
+						{
+							"key": "symKey",
+							"value": "HRhxGF3uZRrEnBgAbPRM2g==",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_DecryptFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_DecryptFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeyEncryptData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "dncDirectoryPath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\decryptText.txt",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "certBase64",
+							"value": "MIICszCCAlagAwIBAgIFEjIXeTYwDAYIKoEcz1UBg3UFADAlMQswCQYDVQQGEwJDTjEWMBQGA1UECgwNQ0ZDQSBTTTIgT0NBMTAeFw0xOTA0MjYwOTIyNTBaFw0yNDA0MjYwOTIyNTBaMIGPMQswCQYDVQQGEwJjbjESMBAGA1UECgwJQ0ZDQSBPQ0ExMRQwEgYDVQQLDAtzaGFyZXN1bnNtMjEbMBkGA1UECwwSQnVzaW5lc3MgQ3VzdG9tZXJzMTkwNwYDVQQDDDAwNDFAMDMzMDYwMjE5NzEwODMwMDAxOEDmtYvor5XkuKrkurrkuIBAMDAwMDAwMDEwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAS9l8u/17n/0kCvyaAQkJpeK1FxuhPDxv4b6sgr/E2qu2n+UgaqepBkNQd8tR5cuHa5DaQ0eWAtslIu424ZLJyAo4IBBDCCAQAwHwYDVR0jBBgwFoAUXJNYIFokc1YQG2RQEOzpp8oHQREwDAYDVR0TAQH/BAIwADBIBgNVHSAEQTA/MD0GCGCBHIbvKgEBMDEwLwYIKwYBBQUHAgEWI2h0dHA6Ly93d3cuY2ZjYS5jb20uY24vdXMvdXMtMTQuaHRtMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly9jcmwuY2ZjYS5jb20uY24vU00yL2NybDM4MzguY3JsMA4GA1UdDwEB/wQEAwIDODAdBgNVHQ4EFgQUV3EQtJgB30U7x8dvwrFBJC6FcnwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMAwGCCqBHM9VAYN1BQADSQAwRgIhAI6id6C4K6RVrgrs/MBJPyx/7vn4DOVF+CfU44A6hm/FAiEA4rFgUVzdy0xJS1tl3iAF7atj3yjNtYBw5/UL5PnVQ8U=",
+							"type": "text"
+						},
+						{
+							"key": "rsKey",
+							"value": "hello world! ruby",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeyEncryptData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeyEncryptData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeyDecryptData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "containerId",
+							"value": "{1B57694E-911E-41D9-8123-971EDD71342C}",
+							"type": "text"
+						},
+						{
+							"key": "encFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\encryptText.txt",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "encRsKey",
+							"value": "7t3u3bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEFy2c4xC2V/gNULFFNQT8A3saJKQJlOJ6NGIK3E/quXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAX+C+x5Wy+yRVAPABrWMyzJUze2DDddnD8KYlHy4/fj/20vEJPKFkDHC/t4AhgnkXbbRTXhO0V9ed7FAGaUVfAEAAAANpwEDD1S+qTJMEUmrX6SB7dDt0OIAAAAJ+N52nnLd+4oFGhlwF+VpPmokuFF9DQ9fqgMcxoj3J0@@@MIICszCCAlagAwIBAgIFEjIXeTYwDAYIKoEcz1UBg3UFADAlMQswCQYDVQQGEwJDTjEWMBQGA1UECgwNQ0ZDQSBTTTIgT0NBMTAeFw0xOTA0MjYwOTIyNTBaFw0yNDA0MjYwOTIyNTBaMIGPMQswCQYDVQQGEwJjbjESMBAGA1UECgwJQ0ZDQSBPQ0ExMRQwEgYDVQQLDAtzaGFyZXN1bnNtMjEbMBkGA1UECwwSQnVzaW5lc3MgQ3VzdG9tZXJzMTkwNwYDVQQDDDAwNDFAMDMzMDYwMjE5NzEwODMwMDAxOEDmtYvor5XkuKrkurrkuIBAMDAwMDAwMDEwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAS9l8u/17n/0kCvyaAQkJpeK1FxuhPDxv4b6sgr/E2qu2n+UgaqepBkNQd8tR5cuHa5DaQ0eWAtslIu424ZLJyAo4IBBDCCAQAwHwYDVR0jBBgwFoAUXJNYIFokc1YQG2RQEOzpp8oHQREwDAYDVR0TAQH/BAIwADBIBgNVHSAEQTA/MD0GCGCBHIbvKgEBMDEwLwYIKwYBBQUHAgEWI2h0dHA6Ly93d3cuY2ZjYS5jb20uY24vdXMvdXMtMTQuaHRtMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly9jcmwuY2ZjYS5jb20uY24vU00yL2NybDM4MzguY3JsMA4GA1UdDwEB/wQEAwIDODAdBgNVHQ4EFgQUV3EQtJgB30U7x8dvwrFBJC6FcnwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMAwGCCqBHM9VAYN1BQADSQAwRgIhAI6id6C4K6RVrgrs/MBJPyx/7vn4DOVF+CfU44A6hm/FAiEA4rFgUVzdy0xJS1tl3iAF7atj3yjNtYBw5/UL5PnVQ8U=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeyDecryptData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeyDecryptData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeyEncryptByDigitalEnvelope",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "souceFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\paintText.txt",
+							"type": "text"
+						},
+						{
+							"key": "encFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\EDEencryptText.txt",
+							"type": "text"
+						},
+						{
+							"key": "certBase64",
+							"value": "MIICszCCAlagAwIBAgIFEjIXeTYwDAYIKoEcz1UBg3UFADAlMQswCQYDVQQGEwJDTjEWMBQGA1UECgwNQ0ZDQSBTTTIgT0NBMTAeFw0xOTA0MjYwOTIyNTBaFw0yNDA0MjYwOTIyNTBaMIGPMQswCQYDVQQGEwJjbjESMBAGA1UECgwJQ0ZDQSBPQ0ExMRQwEgYDVQQLDAtzaGFyZXN1bnNtMjEbMBkGA1UECwwSQnVzaW5lc3MgQ3VzdG9tZXJzMTkwNwYDVQQDDDAwNDFAMDMzMDYwMjE5NzEwODMwMDAxOEDmtYvor5XkuKrkurrkuIBAMDAwMDAwMDEwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAS9l8u/17n/0kCvyaAQkJpeK1FxuhPDxv4b6sgr/E2qu2n+UgaqepBkNQd8tR5cuHa5DaQ0eWAtslIu424ZLJyAo4IBBDCCAQAwHwYDVR0jBBgwFoAUXJNYIFokc1YQG2RQEOzpp8oHQREwDAYDVR0TAQH/BAIwADBIBgNVHSAEQTA/MD0GCGCBHIbvKgEBMDEwLwYIKwYBBQUHAgEWI2h0dHA6Ly93d3cuY2ZjYS5jb20uY24vdXMvdXMtMTQuaHRtMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly9jcmwuY2ZjYS5jb20uY24vU00yL2NybDM4MzguY3JsMA4GA1UdDwEB/wQEAwIDODAdBgNVHQ4EFgQUV3EQtJgB30U7x8dvwrFBJC6FcnwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMAwGCCqBHM9VAYN1BQADSQAwRgIhAI6id6C4K6RVrgrs/MBJPyx/7vn4DOVF+CfU44A6hm/FAiEA4rFgUVzdy0xJS1tl3iAF7atj3yjNtYBw5/UL5PnVQ8U=",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeyEncryptByDigitalEnvelope",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeyEncryptByDigitalEnvelope"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:11200/RS_KeyEncryptByDigitalEnvelope Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "souceFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\paintText.txt",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "encFilePath",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\EDEencryptText.txt",
+							"type": "text"
+						},
+						{
+							"key": "certBase64",
+							"value": "MIICszCCAlagAwIBAgIFEjIXeTYwDAYIKoEcz1UBg3UFADAlMQswCQYDVQQGEwJDTjEWMBQGA1UECgwNQ0ZDQSBTTTIgT0NBMTAeFw0xOTA0MjYwOTIyNTBaFw0yNDA0MjYwOTIyNTBaMIGPMQswCQYDVQQGEwJjbjESMBAGA1UECgwJQ0ZDQSBPQ0ExMRQwEgYDVQQLDAtzaGFyZXN1bnNtMjEbMBkGA1UECwwSQnVzaW5lc3MgQ3VzdG9tZXJzMTkwNwYDVQQDDDAwNDFAMDMzMDYwMjE5NzEwODMwMDAxOEDmtYvor5XkuKrkurrkuIBAMDAwMDAwMDEwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAS9l8u/17n/0kCvyaAQkJpeK1FxuhPDxv4b6sgr/E2qu2n+UgaqepBkNQd8tR5cuHa5DaQ0eWAtslIu424ZLJyAo4IBBDCCAQAwHwYDVR0jBBgwFoAUXJNYIFokc1YQG2RQEOzpp8oHQREwDAYDVR0TAQH/BAIwADBIBgNVHSAEQTA/MD0GCGCBHIbvKgEBMDEwLwYIKwYBBQUHAgEWI2h0dHA6Ly93d3cuY2ZjYS5jb20uY24vdXMvdXMtMTQuaHRtMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly9jcmwuY2ZjYS5jb20uY24vU00yL2NybDM4MzguY3JsMA4GA1UdDwEB/wQEAwIDODAdBgNVHQ4EFgQUV3EQtJgB30U7x8dvwrFBJC6FcnwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMAwGCCqBHM9VAYN1BQADSQAwRgIhAI6id6C4K6RVrgrs/MBJPyx/7vn4DOVF+CfU44A6hm/FAiEA4rFgUVzdy0xJS1tl3iAF7atj3yjNtYBw5/UL5PnVQ8U=",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "containerId",
+							"value": "{1B57694E-911E-41D9-8123-971EDD71342C}",
+							"type": "text"
+						},
+						{
+							"key": "encRsKeyPath",
+							"value": "7t3u3bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANLJeeW9IKkdXyegbDlAAP7y74ULuiSLRzmXlWG/Kr7jAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOzHHe4d5pPZvlXyYu7GYCheCE2g/k2fED3C2wPmr5lsWw4X2tjcf6wWVL38QkrVaEddGsiaxS6stEereTg/+REAAAALFDMKFs9aJgPPQZjMxNjfTdDt0OIAAAAErKUCnxbX8Pr0MUMjhcuGHf3z/aNqfN+fMYPJcT6HR/@@@MIICszCCAlagAwIBAgIFEjIXeTYwDAYIKoEcz1UBg3UFADAlMQswCQYDVQQGEwJDTjEWMBQGA1UECgwNQ0ZDQSBTTTIgT0NBMTAeFw0xOTA0MjYwOTIyNTBaFw0yNDA0MjYwOTIyNTBaMIGPMQswCQYDVQQGEwJjbjESMBAGA1UECgwJQ0ZDQSBPQ0ExMRQwEgYDVQQLDAtzaGFyZXN1bnNtMjEbMBkGA1UECwwSQnVzaW5lc3MgQ3VzdG9tZXJzMTkwNwYDVQQDDDAwNDFAMDMzMDYwMjE5NzEwODMwMDAxOEDmtYvor5XkuKrkurrkuIBAMDAwMDAwMDEwWTATBgcqhkjOPQIBBggqgRzPVQGCLQNCAAS9l8u/17n/0kCvyaAQkJpeK1FxuhPDxv4b6sgr/E2qu2n+UgaqepBkNQd8tR5cuHa5DaQ0eWAtslIu424ZLJyAo4IBBDCCAQAwHwYDVR0jBBgwFoAUXJNYIFokc1YQG2RQEOzpp8oHQREwDAYDVR0TAQH/BAIwADBIBgNVHSAEQTA/MD0GCGCBHIbvKgEBMDEwLwYIKwYBBQUHAgEWI2h0dHA6Ly93d3cuY2ZjYS5jb20uY24vdXMvdXMtMTQuaHRtMDcGA1UdHwQwMC4wLKAqoCiGJmh0dHA6Ly9jcmwuY2ZjYS5jb20uY24vU00yL2NybDM4MzguY3JsMA4GA1UdDwEB/wQEAwIDODAdBgNVHQ4EFgQUV3EQtJgB30U7x8dvwrFBJC6FcnwwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsGAQUFBwMEMAwGCCqBHM9VAYN1BQADSQAwRgIhAI6id6C4K6RVrgrs/MBJPyx/7vn4DOVF+CfU44A6hm/FAiEA4rFgUVzdy0xJS1tl3iAF7atj3yjNtYBw5/UL5PnVQ8U=",
+							"type": "text"
+						},
+						{
+							"key": "dncDirectory",
+							"value": "F:\\source\\RSTestRunner\\bin\\class\\2.txt",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:11200/RS_KeyDecryptByDigitalEnvelope",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "11200",
+					"path": [
+						"RS_KeyDecryptByDigitalEnvelope"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
