@@ -22,7 +22,8 @@ Title| Link | Mark
 脚本|
 --- |
 [HttpServer.postman_collection](https://github.com/anyboo/awesome-test-engineer/blob/master/HttpServer.postman_collection.json)
+[系统架构图](https://github.com/anyboo/awesome-test-engineer/blob/master/Architecture.png)
 ![2](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564722379655&di=12a7052947e0c7a64284f93e092fde6d&imgtype=0&src=http%3A%2F%2Fwww.webgraphics360.com%2Fimages%2FAnimated-Web-Graphics-Stop-2.gif)
-   
+
 
 [![4](http://n.sinaimg.cn/sinacn11/323/w963h960/20181118/2726-hnyuqhh7366371.jpg)](http://k.sina.com.cn/article_5408596403_p14260a1b302700erom.html)
